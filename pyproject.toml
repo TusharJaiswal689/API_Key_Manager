@@ -1,0 +1,25 @@
+[project]
+name = "apikeymanager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tushar Jaiswal", email = "tusharjas689z@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "asyncpg>=0.30.0",
+    "fastmcp>=3.4.7",
+    "mcp>=1.29.1",
+    "pyperclip>=1.9.0",
+    "python-dotenv>=1.1.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+apikeymanager = "apikeymanager:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"

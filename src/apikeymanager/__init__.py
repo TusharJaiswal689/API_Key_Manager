@@ -6,11 +6,11 @@ from tkinter import messagebox, simpledialog
 from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
-from .config import master
-from .crypto import CryptoVault
-from .clipboard import copy_and_secure_clear
-from .db import DatabaseManager
-from .schemas import apikey_retrieve, apikey_store
+from apikeymanager.config import master
+from apikeymanager.crypto import CryptoVault
+from apikeymanager.clipboard import copy_and_secure_clear
+from apikeymanager.db import DatabaseManager
+from apikeymanager.schemas import apikey_retrieve, apikey_store
 
 vault = CryptoVault()
 pool_lock = asyncio.Lock()

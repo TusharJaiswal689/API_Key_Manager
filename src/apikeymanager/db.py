@@ -1,5 +1,5 @@
 import asyncpg
-from .config import db_url
+from apikeymanager.config import db_url
 
 
 class DatabaseManager:
